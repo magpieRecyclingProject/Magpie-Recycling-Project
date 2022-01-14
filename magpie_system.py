@@ -70,7 +70,7 @@ def write_video(filename, frames, fps):
 
 def detect_dropped_object(conn_bool, exposure):
     '''
-    This function uses the camera inside the machine to detect if an items has been dropped. When the script is running
+    This function uses the camera inside the machine to detect if an item has been dropped. When the script is running
     this is a subprocess which sends a boolean to the other subprocess (the function responsible for the outdoor camera)
     when it is triggered. We are using a very simple movement detection, we compare the current frame with a background
     to detect changes. It takes the connection of a pipe to send a boolean through and exposure of the camera as input
